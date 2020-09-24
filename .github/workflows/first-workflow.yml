@@ -8,8 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
-      
-   run:
+  run:
     - name: Run with setup-python 3.8.1
       uses: ./
       with:
