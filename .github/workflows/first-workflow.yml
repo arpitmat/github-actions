@@ -13,5 +13,4 @@ jobs:
       uses: ./
       with:
         python-version: 3.8.1
-    - name: Verify 3.8.1
       - run: python hello-world.py
