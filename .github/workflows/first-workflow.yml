@@ -9,6 +9,7 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
   run:
+    runs-on: ubuntu-latest
     steps:
       - name: Run with setup-python 3.8.1
         uses: ./
