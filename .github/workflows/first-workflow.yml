@@ -9,8 +9,9 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
   run:
-    - name: Run with setup-python 3.8.1
-      uses: ./
-      with:
-        python-version: 3.8.1
-    - run: python hello-world.py
+    steps:
+      - name: Run with setup-python 3.8.1
+        uses: ./
+        with:
+          python-version: 3.8.1
+      - run: python hello-world.py
